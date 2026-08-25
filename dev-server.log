@@ -1,0 +1,30 @@
+
+> resume-vibe@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.0
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 2.7s (656 modules)
+ GET / 200 in 2964ms
+ ✓ Compiled in 326ms (328 modules)
+ ✓ Compiled in 49ms (314 modules)
+ ✓ Compiled /api/analyze in 498ms (508 modules)
+(node:35708) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ POST /api/analyze 502 in 3160ms
+ POST /api/analyze 502 in 906ms
+ POST /api/analyze 502 in 758ms
+ POST /api/analyze 502 in 705ms
+ POST /api/analyze 429 in 1208ms
+ ○ Compiling /analyze ...
+ ✓ Compiled /analyze in 823ms (1088 modules)
+ ✓ Compiled /about in 333ms (1093 modules)
+ ✓ Compiled in 369ms (528 modules)
+ ○ Compiling /functional-test ...
+ ✓ Compiled /functional-test in 662ms (853 modules)
+ GET /functional-test 200 in 803ms
