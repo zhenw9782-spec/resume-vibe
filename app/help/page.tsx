@@ -225,7 +225,7 @@ export default function HelpPage() {
                         <CardContent>
                             <p className="text-sm text-muted-foreground">
                                 如果以上内容未能解决你的问题，请通过邮箱联系我们：
-                                <a href="mailto:hello@resumevibe.com" className="text-primary hover:underline">hello@resumevibe.com</a>
+                                <a href="823760612@qq.com" className="text-primary hover:underline">hello@resumevibe.com</a>
                             </p>
                         </CardContent>
                     </Card>
