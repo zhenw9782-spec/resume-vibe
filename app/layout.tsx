@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import Header from "@/components/Header";
 import { GlobalPrivacyModal } from "@/src/components/GlobalPrivacyModal"; // 1. 导入全局隐私弹窗包裹组件
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
     title: "ResumeVibe - 简历极速打磨专家",
@@ -27,6 +28,9 @@ export default function RootLayout({
 
                 {/* 全局挂载隐私弹窗 */}
                 <GlobalPrivacyModal />
+
+                {/* Vercel Web Analytics */}
+                <Analytics />
 
                 {/* 页脚 */}
                 <footer className="border-t">
