@@ -9,6 +9,7 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 const NAV_LINKS = [
     { href: "/", label: "首页" },
     { href: "/analyze", label: "优化简历" },
+    { href: "/help", label: "帮助" },
     { href: "/about", label: "关于我们" },
 ];
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import Header from "@/components/Header";
-import { GlobalPrivacyModal } from "@/src/components/GlobalPrivacyModal"; // 1. 导入全局隐私弹窗包裹组件
+import { GlobalPrivacyModal } from "@/src/components/GlobalPrivacyModal";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
     title: "ResumeVibe - 简历极速打磨专家",
@@ -28,6 +30,10 @@ export default function RootLayout({
                 {/* 全局挂载隐私弹窗 */}
                 <GlobalPrivacyModal />
 
+                {/* Vercel Analytics & Speed Insights */}
+                <Analytics />
+                <SpeedInsights />
+
                 {/* 页脚 */}
                 <footer className="border-t">
                     <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
@@ -37,6 +43,13 @@ export default function RootLayout({
                             </p>
                         </div>
                         <div className="flex items-center space-x-1">
+                            <Link
+                                href="/help"
+                                className="text-xs text-muted-foreground hover:text-foreground"
+                            >
+                                使用帮助
+                            </Link>
+                            <span className="text-muted-foreground">•</span>
                             <Link
                                 href="/privacy"
                                 className="text-xs text-muted-foreground hover:text-foreground"
